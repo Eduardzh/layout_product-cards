@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import './variables';
 
 .stars {
   display: flex;
@@ -19,7 +19,7 @@
   //   }
   // }
 
-    &__star:nth-child(-n+#{$stars}){
+  &__star:nth-child(-n + #{$stars}) {
     background-image: url(../images/star-active.svg);
   }
 }

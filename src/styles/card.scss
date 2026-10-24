@@ -14,7 +14,7 @@
   &__image {
     display: block;
     background-image: url('../images/imac.jpeg');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 134px;
     width: 160px;
@@ -28,16 +28,17 @@
     font-family: $defaultFont;
   }
 
-  &__details--name {
+  &__name {
+    margin: 0 0 4px;
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0%;
     color: $mainTextColor;
-    margin-bottom: 4px;
   }
 
-  &__details--code {
+  &__code {
+    margin: 0 0 16px;
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
@@ -50,20 +51,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: last baseline;
+    align-items: flex-end;
     width: 100%;
     margin-bottom: 24px;
   }
 
   &__reviews {
-    display: block;
+    display: flex;
     margin: 0;
     font-family: $defaultFont;
     font-weight: 400;
     font-size: 10px;
     line-height: 14px;
     letter-spacing: 0%;
-    text-align: right;
     color: $mainTextColor;
   }
 
@@ -75,7 +75,7 @@
     margin-bottom: $defaultMarginBottom;
   }
 
-  &__price_price {
+  &__cost {
     margin: 0;
     font-family: $defaultFont;
     font-weight: 400;
@@ -85,7 +85,7 @@
     color: #616070;
   }
 
-  &__price_value {
+  &__value {
     margin: 0;
     font-family: $defaultFont;
     font-weight: 700;
@@ -113,15 +113,12 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0%;
-
-    &--link {
-      text-decoration: none;
-    }
+    text-decoration: none;
+    border: 1px solid $buttonColor;
 
     &:hover {
       background-color: #fff;
       color: $buttonColor;
-      border: 1px solid $buttonColor;
     }
   }
 }
